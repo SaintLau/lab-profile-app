@@ -38,6 +38,7 @@ const Login = props => {
     return(
         <div>
             <form className="form-group m-2" onSubmit={handleFormSubmit} style={{maxWidth:"350px"}}>
+                <h3>Log In</h3>
                 <label>Username:</label>
                 <input className="form-control"
                     type="text"
@@ -61,6 +62,7 @@ const Login = props => {
 
             <p>
                 Don't have an account? Join us:
+                {" "}
                 <Link to={"/signup"}>Signup</Link>
             </p>
         </div>

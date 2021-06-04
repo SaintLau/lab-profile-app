@@ -44,6 +44,7 @@ const Signup = props => {
     return (
         <div>
             <form className="form-group m-2" onSubmit={handleFormSubmit} style={{maxWidth:"350px"}}>
+                <h3>Sign up</h3>
                 <label>Username:</label>
                 <input className="form-control" 
                     type="text" 
@@ -85,6 +86,7 @@ const Signup = props => {
 
             <p className="m-2">
                 Already have account?
+                {" "}
                 <Link to={"/login"}>Login</Link>
             </p>
         </div>
